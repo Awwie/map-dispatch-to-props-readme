@@ -466,6 +466,13 @@ class App extends Component {
     todo: ''
   }
 
+  addTodo = () => {
+    return ({
+      type: 'ADD_TODO',
+      todo: this.state.todo
+    })
+  }
+
   handleOnChange = event => {
     this.setState({
       todo: event.target.value
